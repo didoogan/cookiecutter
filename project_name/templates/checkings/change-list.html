@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Changes List</h2>
+    {% for item in checkmodel_list %}
+        <div>{{ item }}</div>
+    {% endfor %}
+{% endblock content %}
