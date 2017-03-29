@@ -40,5 +40,5 @@ if settings.DEBUG:
             url(r'^__debug__/', include(debug_toolbar.urls)),
         ]
     urlpatterns += [
-        url(r'^checkings', include('checkings.urls', namespace='checkings'))
+        url(r'^checkings/', include('checkings.urls', namespace='checkings'))
     ]
