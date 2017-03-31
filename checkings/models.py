@@ -9,3 +9,7 @@ class CheckModel(Representable):
     int_null = models.IntegerField(null=True)
     int_null_blank = models.IntegerField(null=True, blank=True)
     int_blank = models.IntegerField(blank=True, default=None)
+
+    def get_absolute_url(self):
+       from django.urls import reverse
+       return reverse('checkings:detail', kwargs={'pk': self.id})

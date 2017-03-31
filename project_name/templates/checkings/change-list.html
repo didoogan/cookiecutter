@@ -8,6 +8,7 @@
 {% block content %}
     <h2>Changes List</h2>
     {% for item in dich_list %}
-        <div><a href="{% url 'checkings:detail' item.pk  %}"> {{ item }}</a></div>
+{#        <div><a href="{% url 'checkings:detail' item.pk  %}"> {{ item }}</a></div>#}
+        <div><a href="{{ item.get_absolute_url }}"> {{ item }}</a></div>
     {% endfor %}
 {% endblock content %}
