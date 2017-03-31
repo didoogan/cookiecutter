@@ -64,7 +64,7 @@ node_modules/
 
 # Compass
 .sass-cache
-
+config/settings/local.py
 # virtual environments
 .env
 
